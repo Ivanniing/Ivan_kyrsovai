@@ -371,19 +371,28 @@
 
 4. **Таблица 'Genres' (Жанры)**
 
-GenreID INT PRIMARY KEY AUTO_INCREMENT — Уникальный идентификатор жанра.
-GenreName VARCHAR(100) NOT NULL — Название жанра.
-Таблица Authors (Авторы)
+- **'GenreID'** INT PRIMARY KEY AUTO_INCREMENT — Уникальный идентификатор жанра.
+  
+- **'GenreName'** VARCHAR(100) NOT NULL — Название жанра.
+  
+5. **Таблица 'Authors' (Авторы)**
 
-AuthorID INT PRIMARY KEY AUTO_INCREMENT — Уникальный идентификатор автора.
-AuthorName VARCHAR(100) NOT NULL — Имя автора.
-Таблица Librarians (Библиотекари)
+- **'AuthorID'** INT PRIMARY KEY AUTO_INCREMENT — Уникальный идентификатор автора.
+  
+- **'AuthorName'** VARCHAR(100) NOT NULL — Имя автора.
+  
+6. **Таблица 'Librarians' (Библиотекари)**
 
-LibrarianID INT PRIMARY KEY AUTO_INCREMENT — Уникальный идентификатор библиотекаря.
-FirstName VARCHAR(50) NOT NULL — Имя.
-LastName VARCHAR(50) NOT NULL — Фамилия.
-Email VARCHAR(100) NOT NULL — Электронная почта.
-3.2. Определение связей между таблицами
+- **'LibrarianID'** INT PRIMARY KEY AUTO_INCREMENT — Уникальный идентификатор библиотекаря.
+  
+- **'FirstName'** VARCHAR(50) NOT NULL — Имя.
+  
+- **'LastName'** VARCHAR(50) NOT NULL — Фамилия.
+  
+- **'Email'** VARCHAR(100) NOT NULL — Электронная почта.
+  
+**3.2. Определение связей между таблицами**
+
 Связи между таблицами будут установлены через внешние ключи:
 
 В таблице Books:
